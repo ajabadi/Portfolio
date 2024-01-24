@@ -187,3 +187,45 @@ img {
     object-fit: cover;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .header .navbar a, .dropdown-content a {
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 10px; /* Larger touch targets */
+        display: block; /* Stack navigation links vertically */
+    }
+
+    .main-container {
+        width: 100%; /* Full width for main container */
+        padding: 50px; /* Adjust padding for smaller screens */
+    }
+
+    .main-container img, .main-container video {
+        max-width: 100%; /* Full width for images and videos */
+        height: auto; /* Auto-adjust height */
+        margin-bottom: 20px; /* Add space below images and videos */
+    }
+
+    .heading, .boxes, .location, .donation, .pictures {
+        text-align: center;
+        padding: 30px 0; /* Add padding above and below each section */
+    }
+
+    .heading p, .boxes p, .donation p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px; /* Ensures space after paragraphs */
+        text-align: left; /* Align text to the left for readability */
+    }
+
+    .pictures img {
+        width: 100%; /* Full width for images in the pictures class */
+        margin-bottom: 15px; /* Space below each image */
+    }
+
+    /* Specific styles for links in donation section */
+    .donation a {
+        display: block; /* Ensure each link is on a new line */
+        margin-bottom: 10px;
+    }
+}

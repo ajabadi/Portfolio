@@ -326,16 +326,46 @@
     }
 
     @media (max-width: 767px) {
-        .about-me, .work-container, .skills-container {
-        margin-right: 0;
-        padding: 10px;
+        .navbar a{
+            font-size: 14px; /* Smaller font size for mobile */
+            padding: 10px; /* Larger touch targets */
+            display: block; /* Stack navigation links vertically */
+        }
+        .about-me {
+            position: relative; /* Remove absolute positioning */
+            margin-right: 0; /* Remove the right margin */
+            padding: 15px; /* Add padding for spacing */
+            font-size: 14px; /* Adjust font size for readability */
+            text-align: justify; /* Optional: for better text alignment */
+        }
+        .home-content {
+            margin-top: 60px;
+        }
+        .flex-container {
+            display: block; /* Stack elements vertically */
+        }
+    
+        .work-container, .skills-container {
+            width: 100%; /* Full width for better readability */
+            margin-right: 0; /* Reset the right margin */
+        }
+    
+        .skills-container {
+            overflow: visible; /* Ensure the content is fully visible */
+        }
+    
+        .container, .box-2, .box-3 {
+            width: 100%; /* Adjust width for responsiveness */
+            /* Add bottom margin for spacing */
+        }
+    
+        .skills-list {
+            flex-direction: column; /* Stack list items vertically */
+        }
+        
+        .skills-list li {
+            flex-grow: 0; /* Prevent list items from growing */
         }
     }
     
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-            
-         
               

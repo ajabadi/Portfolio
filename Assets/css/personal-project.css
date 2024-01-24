@@ -235,12 +235,29 @@
         
         
         @media (max-width: 768px) {
-            .navbar a {
-            display: block; /* Stack links vertically on smaller screens */
+            .navbar a, .dropdown-content a {
+                font-size: 14px; /* Smaller font size for mobile */
+                padding: 10px; /* Larger touch targets */
+                display: block; /* Stack navigation links vertically */
             }
         
-    .fundraiser-slider, .permias-slider {
-        width: 100%; /* Full width on smaller screens */
-    }
-
+            .main-container {
+                width: 100%; /* Full width for main container */
+                padding: 20px; /* Adjust padding */
+            }
+        
+            .slider, .fundraiser-slider, .permias-slider {
+                width: 100%; /* Full width for sliders */
+                height: auto; /* Auto-adjust height */
+            }
+        
+            .home-content h1, .home-content h2 {
+                font-size: 20px; /* Smaller font size for headings */
+            }
+        
+            .volunteering-sliders {
+                flex-direction: column; /* Stack the sliders vertically */
+                align-items: center; /* Center align the sliders */
+            }
         }
+        
