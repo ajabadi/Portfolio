@@ -339,7 +339,7 @@
             text-align: justify; /* Optional: for better text alignment */
         }
         .home-content {
-            margin-top: 60px;
+            margin-top: 80px;
         }
         .flex-container {
             display: block; /* Stack elements vertically */
